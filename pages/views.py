@@ -6,14 +6,15 @@ from .forms import SingleOrderForm, AddressForm
 from .cart import Cart
 
 
-from .models import Size, Color, Address, Image
+from .models import Size, Color, Address, Image, UniqueFeature
 
 class HomePageView(View):
     template_name = 'pages/home.html'
     def get(self, request=None, *args, **kwargs):
         images = Image.objects.all()
         sizes = Size.objects.all()
-        return render(request, 'pages/home.html', {'images': images, 'sizes': sizes})
+        unique_features = UniqueFeature.objects.all()
+        return render(request, 'pages/home.html', {'images': images, 'sizes': sizes, 'unique_features': unique_features})
     
 
 

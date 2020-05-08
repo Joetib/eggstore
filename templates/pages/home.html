@@ -1,4 +1,3 @@
-
 {% extends '_base.html' %}
 {% load static %}
 
@@ -99,229 +98,55 @@
       <div class="col-md-8 pb-40 header-text">
         <h1>Some Features that Made us Unique</h1>
         <p>
-          Who are in extremely love with eco friendly system.
+          BEST EGG SUPPLY SHOP
         </p>
       </div>
     </div>
     <div class="row">
+{% for feature in unique_features %}
       <div class="col-lg-4 col-md-6">
         <div class="single-service">
-          <h4><span class="lnr lnr-user"></span>Expert Technicians</h4>
+          <h4>{{ feature.title }}s</h4>
           <p>
-            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+            {{ feature.description }}
           </p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-service">
-          <h4><span class="lnr lnr-license"></span>Professional Service</h4>
-          <p>
-            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-          </p>
-        </div>
+    {% empty %}
+
+    
+    <div class="col-lg-4 col-md-6">
+      <div class="single-service">
+        <h4><span class="lnr lnr-user"></span>Expert Technicians</h4>
+        <p>
+          Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+        </p>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-service">
-          <h4><span class="lnr lnr-phone"></span>Great Support</h4>
-          <p>
-            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-          </p>
-        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="single-service">
+        <h4><span class="lnr lnr-user"></span>Expert Technicians</h4>
+        <p>
+          Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+        </p>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-service">
-          <h4><span class="lnr lnr-rocket"></span>Technical Skills</h4>
-          <p>
-            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-          </p>
-        </div>
+    </div>
+    <div class="col-lg-4 col-md-6">
+      <div class="single-service">
+        <h4><span class="lnr lnr-user"></span>Expert Technicians</h4>
+        <p>
+          Usage of the Internet is becoming more common due to rapid advancement of technology and power.
+        </p>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-service">
-          <h4><span class="lnr lnr-diamond"></span>Highly Recomended</h4>
-          <p>
-            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-service">
-          <h4><span class="lnr lnr-bubble"></span>Positive Reviews</h4>
-          <p>
-            Usage of the Internet is becoming more common due to rapid advancement of technology and power.
-          </p>
-        </div>
-      </div>
+    </div>
+    {% endfor %}
+      
+     
+      
     </div>
   </div>
 </section>
 <!-- End service Area -->
-
-<!-- Start unique-feature Area -->
-<section class="unique-feature-area section-gap" id="unique">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="menu-content pb-60 col-lg-10">
-        <div class="title text-center">
-          <h1 class="mb-10 text-white">Some Features that Made us Unique</h1>
-          <p>Who are in extremely love with eco friendly system.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-6">
-      <div class="single-unique-product">
-        <img class="img-fluid" src="img/u2.jpg" alt="">
-        <div class="desc">
-          <h4>
-            Apple Watch White
-          </h4>
-          <h6>£399.00</h6>
-          <a class="text-uppercase primary-btn" href="#">Pre Order</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <div class="single-unique-product">
-        <img class="img-fluid" src="img/u3.jpg" alt="">
-        <div class="desc">
-          <h4>
-            Apple Watch White
-          </h4>
-          <h6>£399.00</h6>
-          <a class="text-uppercase primary-btn" href="#">Pre Order</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3 col-md-6">
-      <div class="single-unique-product">
-        <img class="img-fluid" src="img/u4.jpg" alt="">
-        <div class="desc">
-          <h4>
-            Apple Watch White
-          </h4>
-          <h6>£399.00</h6>
-          <a class="text-uppercase primary-btn" href="#">Pre Order</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</section>
-<!-- End unique-feature Area -->
-
-<!-- Start review Area -->
-<section class="review-area section-gap" id="review">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="menu-content pb-60 col-lg-10">
-        <div class="title text-center">
-          <h1 class="mb-10">Some Features that Made us Unique</h1>
-          <p>Who are in extremely love with eco friendly system.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="single-review">
-          <h4>Cody Hines</h4>
-          <p>
-            Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-            speaker.
-          </p>
-          <div class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-review">
-          <h4>Chad Herrera</h4>
-          <p>
-            Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-            speaker.
-          </p>
-          <div class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-review">
-          <h4>Andre Gonzalez</h4>
-          <p>
-            Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-            speaker.
-          </p>
-          <div class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-review">
-          <h4>Jon Banks</h4>
-          <p>
-            Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-            speaker.
-          </p>
-          <div class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-review">
-          <h4>Landon Houston</h4>
-          <p>
-            Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-            speaker.
-          </p>
-          <div class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single-review">
-          <h4>Nelle Wade</h4>
-          <p>
-            Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner,
-            speaker.
-          </p>
-          <div class="star">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End review Area -->
 
 <!-- Start faq Area -->
 <section class="faq-area section-gap" id="faq">
@@ -330,7 +155,6 @@
       <div class="menu-content pb-60 col-lg-10">
         <div class="title text-center">
           <h1 class="mb-10">Frequently Asked Questions</h1>
-          <p>Who are in extremely love with eco friendly system.</p>
         </div>
       </div>
     </div>
@@ -342,69 +166,21 @@
               <h5 class="mb-0">
                 <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                   aria-controls="collapseOne">
-                  Are your Templates responsive?
+                  How long does it take to make delivery
                 </button>
               </h5>
             </div>
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  Does it have all the plugin as mentioned?
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  Can i use the these theme for my client?
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                  aria-expanded="false" aria-controls="collapseThree">
-                  Are your Templates responsive?
-                </button>
-              </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-              <div class="card-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                The maximum delivery duration is 3 days.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </section>
 <!-- End faq Area -->
