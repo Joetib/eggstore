@@ -36,7 +36,7 @@
                                             <th>Size</th>
                                             <th>Color</th>
                                             <th>Price</th>
-                                            <th>Quantity</th>
+                                            <th>Number of crates</th>
                                             
                                         </tr>
                                     </thead>
@@ -61,9 +61,8 @@
                                                     <form class="quantity">
                                                         <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--; 
                                                         if (!isNaN(qty) &amp;&amp; qty &gt; -1){
-                                                            console.log('doing it oo')
-                                                            console.log(qty)
-                                                        fetch('/json/cart/?key={{item.size}}:{{item.color}}&qty='+effect.value)
+                                                            
+                                                        fetch('/json/cart/?color={{item.color}}&size={{item.size}}&qty='+effect.value)
                                                         .then(response => response.json())
                                                         .then((data) => console.log(data));
                                                         }
