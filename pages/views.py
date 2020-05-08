@@ -38,6 +38,7 @@ def add_order(request):
 
 @login_required
 def checkout(request):
+    query_set = Address.objects.filter(user=request.user)
     if query_set.exists():
         user_address = query_set[0]
     else:
