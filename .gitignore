@@ -11,3 +11,9 @@ __pycache__/
 db.sqlite3
 media
 static
+venv/
+env/
+venv/*
+env/*
+media/
+media/*
