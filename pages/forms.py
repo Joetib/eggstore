@@ -10,11 +10,14 @@ class SingleOrderForm(forms.ModelForm):
         'class': 'form-control w-100'
     }))
     quantity = forms.CharField(widget=forms.NumberInput(attrs={
-        'class': 'form-control w-100'
+        'class': 'form-control w-100',
+        'min': 1,
     }))
     class Meta:
         model = SingleOrder
         fields = ( 'size', 'color', 'quantity')
+    
+    
 
 class AddressForm(forms.ModelForm):
     
